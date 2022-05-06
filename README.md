@@ -1,10 +1,9 @@
-# CppTemplate
+# Pgen
 
 ## :warning: Requirement
 
 - [CMake >= 3.17](https://cmake.org/download/)
 - [C++17](https://en.cppreference.com/w/cpp/17)
-- [Python3](https://www.python.org/download/releases/3.0/)
 
 ## :computer: Usage
 
@@ -26,7 +25,7 @@ Using Unix Makefile:
 ```sh
 # to build the program
 make
-./binary
+./pgen
 
 # to build the tests
 make tests
@@ -38,7 +37,7 @@ Using CMake:
 # to build the program
 cmake . -B build
 cmake --build build
-./binary
+./pgen
 
 # to build the tests
 cmake . -B build_tests -DUNIT_TESTS=ON

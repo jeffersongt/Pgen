@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.17)
 
 # Name of the CMake project
-project(Template)
+project(Pgen)
 
 # C++ standard you want to use for the project
 set(CMAKE_CXX_STANDARD 17)
@@ -17,7 +17,7 @@ if(UNIT_TESTS)
     set(BIN unit_tests)
 else()
     # Bin name of the project
-    set(BIN binary)
+    set(BIN pgen)
 endif()
 
 # Fetch GoogleTest
@@ -44,7 +44,9 @@ set(MAIN src/main.cpp)
 
 # List of source files
 set(SOURCES
-    # fill here
+    src/main.cpp
+    src/core.cpp
+    src/generate.cpp
 )
 
 # List of tests source files

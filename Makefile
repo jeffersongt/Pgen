@@ -9,7 +9,7 @@ tests:
 clean:
 	@rm -rf build
 	@rm -rf build_tests
-	@rm -rf binary
+	@rm -rf pgen
 	@rm -rf unit_tests
 
 .PHONY: all tests clean
