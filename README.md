@@ -38,7 +38,7 @@ pgen help
 pgen [PORT] [PROJECT-NAME]
 ```
 
-- PORT is the port on which you will listen your database
+- PORT is the port on which you will listen to your database
 - PROJECT-NAME is you project name, it permits to name the volumes and the db name
 
 - When you'll execute the program, a docker will be launched. If you don't want to keep this terminal running constantly just kill the process and re-launch manually the docker !
