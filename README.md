@@ -1,51 +1,44 @@
 # Pgen
 
+- Pgen permits you to automatically create a dockerized postgresql database
+
 ## :warning: Requirement
 
 - [CMake >= 3.17](https://cmake.org/download/)
 - [C++17](https://en.cppreference.com/w/cpp/17)
+- [Docker](https://www.docker.com)
 
 ## :computer: Usage
 
 ### :rocket: Clone repository
 
 ```sh
-git clone https://github.com/martin-olivier/CppTemplate
+git clone https://github.com/jeffersongt/pg-gen
 ```
 
-### :wrench: Setup repository
+### :hammer: Build and Install project
+
+The following command will build the project install `pgen` on your system:
 
 ```sh
-python3 setup.py
+./install.py
 ```
 
-## :hammer: Build
+### :wrench: Helper
 
-Using Unix Makefile:
+If you need some help:
+
 ```sh
-# to build the program
-make
-./pgen
-
-# to build the tests
-make tests
-./unit_tests
+pgen help
 ```
 
-Using CMake:
+## :hammer: Usage
+
 ```sh
-# to build the program
-cmake . -B build
-cmake --build build
-./pgen
-
-# to build the tests
-cmake . -B build_tests -DUNIT_TESTS=ON
-cmake --build build_tests
-./unit_tests
+pgen [PORT] [PROJECT-NAME]
 ```
 
-## :bust_in_silhouette: Authors
+- PORT is the port on which you will listen your database
+- PROJECT-NAME is you project name, it permits to name the volumes and the db name
 
- - [Martin Olivier](https://github.com/martin-olivier)
- - [Coline Seguret](https://github.com/Cleopha)
+- When you'll execute the program, a docker will be launched. If you don't want to keep this terminal running constantly just kill the process and re-launch manually the docker !
