@@ -46,5 +46,5 @@ pgen [PORT] [PROJECT-NAME]
 - The program will run a docker container, you don't have to keep the terminal running constantly now that your container has been created
 
 ```sh
-Kill the process and re-launch manually the docker
+Kill the process and re-launch manually the container
 ```
