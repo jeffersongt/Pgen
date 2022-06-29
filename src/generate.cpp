@@ -41,7 +41,7 @@ void Generate::writeFile()
 
 void Generate::launch()
 {
-  std::string init = "cd " + _projname + "; docker-compose up";
+  std::string init = "cd " + _projname + "; docker-compose up -d";
   const char *_init = init.c_str();
   system(_init);
 
